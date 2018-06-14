@@ -18,6 +18,19 @@ body {
     width: 100%;
     font-family: 'Raleway', sans-serif;
 }
+
+.carousel-control.left,.carousel-control.right {
+    background:none;
+}
+
+.carousel-indicators .active {
+    background-color: black;
+}
+
+.carousel-indicators li {
+    border: 1px solid #000;
+}
+
 .preloader {
     position: fixed;
     top: 0;
@@ -190,6 +203,15 @@ p {
     line-height: 2rem;
     font-size: 0.875rem;
 }
+
+#othersservice p, #contact p {
+    font-size:18px;
+}
+
+#othersservice h4 {
+    font-size:20px;
+}
+
 p:last-child {
     margin-bottom: 0px;
 }
@@ -505,6 +527,11 @@ input::-ms-input-placeholder {
     color: #ddd;
 }
 
+#about {
+    font-size: 20px;
+    color:white;
+}
+
 /*for image bg*/
 
 /*.img-bg{
@@ -528,7 +555,7 @@ input::-ms-input-placeholder {
     z-index: 300;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-    background-color: rgba(34, 61, 97, 0.64);
+    background-color: rgba(0, 0, 0, 0.904);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -1000,11 +1027,22 @@ input::-ms-input-placeholder {
 .team .single_team_content:hover .single_team_text_overlay {
     opacity: 1;
 }
+
+.single_team_img img{
+    transition:0.1s ease;
+}
+
+.team .single_team_content:hover .single_team_img img{
+    filter:brightness(30%);
+}
+
 .team .single_team_content .single_team_text_overlay {
     position: absolute;
+    text-align:center;
+    font-size: 20px;
     left: 15%;
     top: 30%;
-    background: rgba(255, 114, 0, 0.75);
+    /*background: rgba(255, 114, 0, 0.75);*/
     padding: 10px 20px;
     width: 70%;
     opacity: 0;
@@ -1033,6 +1071,10 @@ input::-ms-input-placeholder {
 }
 
 /*why choose us section css*/
+
+#service p {
+    font-size:20px;
+}
 
 /*choose section css*/
 .choose {
@@ -1338,11 +1380,11 @@ button.btn-md:hover {
     background: #eeeeee;
 }
 
-/*contact section css*/
+/*contact section css
 .contact {
     background: url(../images/contactbg.png) no-repeat center center;
     background-size: cover;
-}
+}*/
 
 .contact .single_contact_info {
     margin-bottom: 45px;
@@ -1562,4 +1604,56 @@ button.btn-md:hover {
     margin-top: -7px;
     margin-left: -6px;
     text-decoration: none;
+}
+
+.halua {display:none;}
+
+#titleImg {
+    height:400px;
+}
+
+#service {
+    margin-top: -250px;
+}
+
+@media screen and (max-width: 992px) {
+  #titleImg {
+    height:200px;
+  }
+
+  #service {
+    margin-top: -150px;
+  }
+
+
+}
+
+
+#back{
+    background: url("../images/aa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#float-img{
+    z-index:2;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    position:relative;
+}
+.typr{
+    position: absolute;
+    color: #fff;
+    z-index: 4;
+    top: 50%;
+    font-size: 2.4em;
+    left: 20%;
+    transform: translate(-50%, 0%);
+}
+.box{
+    text-align: center;
+    padding: 20px;
+    height: 300px;
+}
+#imgwrapper{
+    max-width: 80%;
 }

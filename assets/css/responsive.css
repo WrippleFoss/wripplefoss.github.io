@@ -46,6 +46,9 @@ Author URI: http://www.bootstrapthemes.co
         line-height: 2rem;
         margin-bottom: 15px;
     }
+    .typr {
+        font-size: 2em;
+    }
     h5 {
         font-size: 1.1rem;
         margin-bottom: 0.5rem;
@@ -220,7 +223,11 @@ Author URI: http://www.bootstrapthemes.co
         text-align: center;
     }
 }
-
+@media (max-width: 668px) {
+    .typr {
+        visibility: hidden;
+    }
+}
 /* Landscape phones and smaller */
 @media (max-width: 479px) {
     html {
